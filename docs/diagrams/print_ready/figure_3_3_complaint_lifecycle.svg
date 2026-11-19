@@ -1,0 +1,296 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="960" viewBox="0 0 1180 960">
+  <rect x="0" y="0" width="1180" height="960" fill="#FFFFFF"/>
+  <text x="590.0" y="36.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#111827">HostelCare Complaint Maintenance Lifecycle and State Transitions</text>
+  <text x="590.0" y="64.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#334155">Verified against admin_service.py, staff_service.py &amp; student_service.py (complaints.status CHECK)</text>
+  <rect x="34.0" y="108.0" width="100.0" height="54.0" rx="27" ry="27" fill="#E2E8F0" stroke="#111827" stroke-width="2.2"/>
+  <text x="84.0" y="142.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#111827">START</text>
+  <polyline points="134.0,135.0 218.0,135.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="218.0,135.0 206.0,140.5 206.0,129.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <text x="176.0" y="120.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#111827">Submit</text>
+  <text x="176.0" y="158.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">[Student]</text>
+  <rect x="218.0" y="101.0" width="210.0" height="68.0" rx="14" ry="14" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <text x="323.0" y="132.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#111827">submitted</text>
+  <text x="323.0" y="156.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">CMP-YYYY-NNNNN</text>
+  <polyline points="428.0,135.0 496.0,135.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="496.0,135.0 484.0,140.5 484.0,129.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <polygon points="600.0,85.0 704.0,135.0 600.0,185.0 496.0,135.0" fill="#F8FAFC" stroke="#111827" stroke-width="2.2"/>
+  <text x="600.0" y="130.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#111827">Approve for</text>
+  <text x="600.0" y="152.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#111827">Handling?</text>
+  <polyline points="704.0,135.0 812.0,135.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="812.0,135.0 800.0,140.5 800.0,129.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <text x="758.0" y="120.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#111827">Yes [Admin]</text>
+  <rect x="812.0" y="101.0" width="220.0" height="68.0" rx="14" ry="14" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <text x="922.0" y="132.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#111827">under_review</text>
+  <text x="922.0" y="156.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">Set category / priority</text>
+  <line x1="600.0" y1="185.0" x2="600.0" y2="192.0" stroke="#111827" stroke-width="2.2"/>
+  <line x1="600.0" y1="196.0" x2="600.0" y2="203.0" stroke="#111827" stroke-width="2.2"/>
+  <line x1="600.0" y1="207.0" x2="600.0" y2="214.0" stroke="#111827" stroke-width="2.2"/>
+  <line x1="600.0" y1="218.0" x2="600.0" y2="225.0" stroke="#111827" stroke-width="2.2"/>
+  <line x1="600.0" y1="229.0" x2="600.0" y2="236.0" stroke="#111827" stroke-width="2.2"/>
+  <line x1="600.0" y1="240.0" x2="600.0" y2="247.0" stroke="#111827" stroke-width="2.2"/>
+  <line x1="600.0" y1="251.0" x2="600.0" y2="258.0" stroke="#111827" stroke-width="2.2"/>
+  <line x1="600.0" y1="262.0" x2="600.0" y2="269.0" stroke="#111827" stroke-width="2.2"/>
+  <line x1="600.0" y1="273.0" x2="600.0" y2="274.0" stroke="#111827" stroke-width="2.2"/>
+  <polygon points="600.0,274.0 594.5,262.0 605.5,262.0" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <text x="588.0" y="232.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#111827">No: Reject [Admin]</text>
+  <rect x="485.0" y="274.0" width="230.0" height="72.0" rx="14" ry="14" fill="#F1F5F9" stroke="#111827" stroke-width="2.2"/>
+  <text x="600.0" y="307.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#111827">rejected (Terminal)</text>
+  <text x="600.0" y="331.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">Mandatory rejection_reason</text>
+  <polyline points="922.0,169.0 922.0,274.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="922.0,274.0 916.5,262.0 927.5,262.0" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <text x="908.0" y="216.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#111827">[Admin] Assigns Staff</text>
+  <text x="908.0" y="238.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">(Opens 1 assignment)</text>
+  <rect x="812.0" y="274.0" width="220.0" height="72.0" rx="14" ry="14" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <text x="922.0" y="307.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#111827">assigned</text>
+  <text x="922.0" y="331.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">uq_assign_one_active</text>
+  <line x1="812.0" y1="310.0" x2="805.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="801.0" y1="310.0" x2="794.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="790.0" y1="310.0" x2="783.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="779.0" y1="310.0" x2="772.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="768.0" y1="310.0" x2="761.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="757.0" y1="310.0" x2="750.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="746.0" y1="310.0" x2="739.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="735.0" y1="310.0" x2="728.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="724.0" y1="310.0" x2="717.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <polygon points="715.0,310.0 727.0,304.5 727.0,315.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <text x="764.0" y="296.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#111827">Reject</text>
+  <polyline points="922.0,346.0 922.0,418.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="922.0,418.0 916.5,406.0 927.5,406.0" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <polygon points="922.0,418.0 1026.0,470.0 922.0,522.0 818.0,470.0" fill="#F8FAFC" stroke="#111827" stroke-width="2.2"/>
+  <text x="922.0" y="465.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#111827">Staff Action</text>
+  <text x="922.0" y="486.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#111827">or Reassign?</text>
+  <line x1="1026.0" y1="470.0" x2="1033.0" y2="470.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1037.0" y1="470.0" x2="1044.0" y2="470.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1048.0" y1="470.0" x2="1055.0" y2="470.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1059.0" y1="470.0" x2="1066.0" y2="470.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="470.0" x2="1070.0" y2="463.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="459.0" x2="1070.0" y2="452.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="448.0" x2="1070.0" y2="441.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="437.0" x2="1070.0" y2="430.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="426.0" x2="1070.0" y2="419.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="415.0" x2="1070.0" y2="408.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="404.0" x2="1070.0" y2="397.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="393.0" x2="1070.0" y2="386.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="382.0" x2="1070.0" y2="375.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="371.0" x2="1070.0" y2="364.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="360.0" x2="1070.0" y2="353.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="349.0" x2="1070.0" y2="342.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="338.0" x2="1070.0" y2="331.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="327.0" x2="1070.0" y2="320.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="316.0" x2="1070.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1070.0" y1="310.0" x2="1063.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1059.0" y1="310.0" x2="1052.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1048.0" y1="310.0" x2="1041.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1037.0" y1="310.0" x2="1032.0" y2="310.0" stroke="#111827" stroke-width="2.0"/>
+  <polygon points="1032.0,310.0 1044.0,304.5 1044.0,315.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <rect x="1028.4" y="379.5" width="83.2" height="25.0" rx="4" ry="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.0"/>
+  <text x="1070.0" y="397.2" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#111827">Reassign</text>
+  <polyline points="818.0,470.0 705.0,470.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="705.0,470.0 717.0,464.5 717.0,475.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <text x="762.0" y="454.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#111827">Accept [Staff]</text>
+  <rect x="495.0" y="436.0" width="210.0" height="68.0" rx="14" ry="14" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <text x="600.0" y="467.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#111827">accepted</text>
+  <text x="600.0" y="491.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">accepted_at set</text>
+  <polyline points="495.0,470.0 382.0,470.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="382.0,470.0 394.0,464.5 394.0,475.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <text x="438.0" y="454.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#111827">Start [Staff]</text>
+  <rect x="142.0" y="436.0" width="240.0" height="68.0" rx="14" ry="14" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <text x="262.0" y="467.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#111827">in_progress</text>
+  <text x="262.0" y="491.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">started_at; progress updates</text>
+  <polyline points="262.0,504.0 262.0,604.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="262.0,604.0 256.5,592.0 267.5,592.0" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <text x="274.0" y="554.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#111827">Complete Work [Staff]</text>
+  <text x="274.0" y="574.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">(+ summary note)</text>
+  <rect x="142.0" y="604.0" width="240.0" height="72.0" rx="14" ry="14" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <text x="262.0" y="637.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#111827">completed</text>
+  <text x="262.0" y="661.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">completed_at (MTTR clock)</text>
+  <polyline points="382.0,640.0 496.0,640.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="496.0,640.0 484.0,645.5 484.0,634.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <polygon points="600.0,588.0 704.0,640.0 600.0,692.0 496.0,640.0" fill="#F8FAFC" stroke="#111827" stroke-width="2.2"/>
+  <text x="600.0" y="635.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#111827">Warden</text>
+  <text x="600.0" y="656.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#111827">Verifies Work?</text>
+  <line x1="600.0" y1="692.0" x2="600.0" y2="699.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="600.0" y1="703.0" x2="600.0" y2="710.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="600.0" y1="714.0" x2="600.0" y2="721.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="600.0" y1="724.0" x2="593.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="589.0" y1="724.0" x2="582.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="578.0" y1="724.0" x2="571.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="567.0" y1="724.0" x2="560.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="556.0" y1="724.0" x2="549.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="545.0" y1="724.0" x2="538.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="534.0" y1="724.0" x2="527.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="523.0" y1="724.0" x2="516.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="512.0" y1="724.0" x2="505.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="501.0" y1="724.0" x2="494.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="490.0" y1="724.0" x2="483.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="479.0" y1="724.0" x2="472.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="468.0" y1="724.0" x2="461.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="457.0" y1="724.0" x2="450.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="446.0" y1="724.0" x2="439.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="435.0" y1="724.0" x2="428.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="424.0" y1="724.0" x2="417.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="413.0" y1="724.0" x2="406.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="402.0" y1="724.0" x2="395.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="391.0" y1="724.0" x2="384.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="380.0" y1="724.0" x2="373.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="369.0" y1="724.0" x2="362.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="358.0" y1="724.0" x2="351.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="347.0" y1="724.0" x2="340.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="336.0" y1="724.0" x2="329.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="325.0" y1="724.0" x2="318.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="314.0" y1="724.0" x2="307.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="303.0" y1="724.0" x2="296.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="292.0" y1="724.0" x2="285.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="281.0" y1="724.0" x2="274.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="270.0" y1="724.0" x2="263.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="259.0" y1="724.0" x2="252.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="248.0" y1="724.0" x2="241.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="237.0" y1="724.0" x2="230.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="226.0" y1="724.0" x2="219.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="215.0" y1="724.0" x2="208.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="204.0" y1="724.0" x2="197.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="193.0" y1="724.0" x2="186.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="182.0" y1="724.0" x2="175.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="171.0" y1="724.0" x2="164.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="160.0" y1="724.0" x2="153.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="149.0" y1="724.0" x2="142.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="138.0" y1="724.0" x2="131.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="127.0" y1="724.0" x2="120.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="116.0" y1="724.0" x2="109.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="105.0" y1="724.0" x2="98.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="94.0" y1="724.0" x2="87.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="83.0" y1="724.0" x2="78.0" y2="724.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="724.0" x2="78.0" y2="717.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="713.0" x2="78.0" y2="706.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="702.0" x2="78.0" y2="695.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="691.0" x2="78.0" y2="684.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="680.0" x2="78.0" y2="673.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="669.0" x2="78.0" y2="662.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="658.0" x2="78.0" y2="651.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="647.0" x2="78.0" y2="640.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="636.0" x2="78.0" y2="629.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="625.0" x2="78.0" y2="618.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="614.0" x2="78.0" y2="607.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="603.0" x2="78.0" y2="596.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="592.0" x2="78.0" y2="585.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="581.0" x2="78.0" y2="574.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="570.0" x2="78.0" y2="563.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="559.0" x2="78.0" y2="552.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="548.0" x2="78.0" y2="541.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="537.0" x2="78.0" y2="530.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="526.0" x2="78.0" y2="519.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="515.0" x2="78.0" y2="508.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="504.0" x2="78.0" y2="497.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="493.0" x2="78.0" y2="486.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="482.0" x2="78.0" y2="475.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="471.0" x2="78.0" y2="470.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="78.0" y1="470.0" x2="85.0" y2="470.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="89.0" y1="470.0" x2="96.0" y2="470.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="100.0" y1="470.0" x2="107.0" y2="470.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="111.0" y1="470.0" x2="118.0" y2="470.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="122.0" y1="470.0" x2="129.0" y2="470.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="133.0" y1="470.0" x2="140.0" y2="470.0" stroke="#111827" stroke-width="2.0"/>
+  <polygon points="142.0,470.0 130.0,475.5 130.0,464.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <rect x="134.6" y="711.5" width="410.8" height="25.0" rx="4" ry="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.0"/>
+  <text x="340.0" y="729.2" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#111827">Return for Rework [Admin] (clears completed_at)</text>
+  <polyline points="704.0,640.0 812.0,640.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="812.0,640.0 800.0,645.5 800.0,634.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <text x="758.0" y="624.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#111827">Verify [Admin]</text>
+  <rect x="812.0" y="604.0" width="220.0" height="72.0" rx="14" ry="14" fill="#F1F5F9" stroke="#111827" stroke-width="2.2"/>
+  <text x="922.0" y="637.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#111827">closed</text>
+  <text x="922.0" y="661.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#334155">closed_at set</text>
+  <polyline points="922.0,676.0 922.0,742.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="922.0,742.0 916.5,730.0 927.5,730.0" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <polygon points="922.0,745.0 1024.0,795.0 922.0,845.0 820.0,795.0" fill="#F8FAFC" stroke="#111827" stroke-width="2.2"/>
+  <text x="922.0" y="790.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#111827">Reopen</text>
+  <text x="922.0" y="811.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#111827">Closed Ticket?</text>
+  <line x1="1024.0" y1="795.0" x2="1031.0" y2="795.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1035.0" y1="795.0" x2="1042.0" y2="795.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1046.0" y1="795.0" x2="1053.0" y2="795.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1057.0" y1="795.0" x2="1064.0" y2="795.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1068.0" y1="795.0" x2="1075.0" y2="795.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1079.0" y1="795.0" x2="1086.0" y2="795.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1090.0" y1="795.0" x2="1097.0" y2="795.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1101.0" y1="795.0" x2="1108.0" y2="795.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1112.0" y1="795.0" x2="1119.0" y2="795.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="795.0" x2="1120.0" y2="788.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="784.0" x2="1120.0" y2="777.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="773.0" x2="1120.0" y2="766.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="762.0" x2="1120.0" y2="755.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="751.0" x2="1120.0" y2="744.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="740.0" x2="1120.0" y2="733.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="729.0" x2="1120.0" y2="722.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="718.0" x2="1120.0" y2="711.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="707.0" x2="1120.0" y2="700.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="696.0" x2="1120.0" y2="689.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="685.0" x2="1120.0" y2="678.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="674.0" x2="1120.0" y2="667.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="663.0" x2="1120.0" y2="656.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="652.0" x2="1120.0" y2="645.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="641.0" x2="1120.0" y2="634.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="630.0" x2="1120.0" y2="623.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="619.0" x2="1120.0" y2="612.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="608.0" x2="1120.0" y2="601.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="597.0" x2="1120.0" y2="590.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="586.0" x2="1120.0" y2="579.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="575.0" x2="1120.0" y2="568.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="564.0" x2="1120.0" y2="557.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="553.0" x2="1120.0" y2="546.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="542.0" x2="1120.0" y2="535.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="531.0" x2="1120.0" y2="524.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="520.0" x2="1120.0" y2="513.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="509.0" x2="1120.0" y2="502.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="498.0" x2="1120.0" y2="491.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="487.0" x2="1120.0" y2="480.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="476.0" x2="1120.0" y2="469.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="465.0" x2="1120.0" y2="458.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="454.0" x2="1120.0" y2="447.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="443.0" x2="1120.0" y2="436.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="432.0" x2="1120.0" y2="425.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="421.0" x2="1120.0" y2="414.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="410.0" x2="1120.0" y2="403.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="399.0" x2="1120.0" y2="392.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="388.0" x2="1120.0" y2="381.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="377.0" x2="1120.0" y2="370.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="366.0" x2="1120.0" y2="359.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="355.0" x2="1120.0" y2="348.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="344.0" x2="1120.0" y2="337.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="333.0" x2="1120.0" y2="326.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="322.0" x2="1120.0" y2="315.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="311.0" x2="1120.0" y2="304.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="300.0" x2="1120.0" y2="293.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="289.0" x2="1120.0" y2="282.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="278.0" x2="1120.0" y2="271.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="267.0" x2="1120.0" y2="260.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="256.0" x2="1120.0" y2="249.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="245.0" x2="1120.0" y2="238.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="234.0" x2="1120.0" y2="227.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="223.0" x2="1120.0" y2="216.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="212.0" x2="1120.0" y2="205.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="201.0" x2="1120.0" y2="194.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="190.0" x2="1120.0" y2="183.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="179.0" x2="1120.0" y2="172.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="168.0" x2="1120.0" y2="161.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="157.0" x2="1120.0" y2="150.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="146.0" x2="1120.0" y2="139.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1120.0" y1="135.0" x2="1113.0" y2="135.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1109.0" y1="135.0" x2="1102.0" y2="135.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1098.0" y1="135.0" x2="1091.0" y2="135.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1087.0" y1="135.0" x2="1080.0" y2="135.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1076.0" y1="135.0" x2="1069.0" y2="135.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1065.0" y1="135.0" x2="1058.0" y2="135.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1054.0" y1="135.0" x2="1047.0" y2="135.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="1043.0" y1="135.0" x2="1036.0" y2="135.0" stroke="#111827" stroke-width="2.0"/>
+  <polygon points="1032.0,135.0 1044.0,129.5 1044.0,140.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <rect x="1038.0" y="530.0" width="130.0" height="44.0" rx="4" ry="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="1103.0" y="549.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#111827">Yes: Reopen</text>
+  <text x="1103.0" y="567.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#334155">[Admin]</text>
+  <polyline points="820.0,795.0 710.0,795.0" fill="none" stroke="#111827" stroke-width="2.2" stroke-linejoin="round"/>
+  <polygon points="710.0,795.0 722.0,789.5 722.0,800.5" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <text x="765.0" y="780.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#111827">No</text>
+  <rect x="596.0" y="768.0" width="114.0" height="54.0" rx="27" ry="27" fill="#E2E8F0" stroke="#111827" stroke-width="2.2"/>
+  <text x="653.0" y="802.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#111827">END</text>
+  <rect x="36.0" y="864.0" width="1108.0" height="76.0" rx="6" ry="6" fill="#F8FAFC" stroke="#111827" stroke-width="2.0"/>
+  <text x="56.0" y="892.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#111827">Legend &amp; Database Side-Effects:   Solid Arrow = Primary Forward Transition    |    Dashed Arrow = Alternate / Admin Exception Path</text>
+  <text x="56.0" y="922.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">• Every transition appends complaint_history &amp; audit_logs, triggers notifications, and updates complaints.version. Photos allowed before closed/rejected.</text>
+</svg>

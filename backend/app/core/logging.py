@@ -28,6 +28,8 @@ def init_logging(app: Flask) -> None:
     handler.setFormatter(JsonFormatter())
     app.logger.handlers = [handler]
     app.logger.setLevel(app.config["LOG_LEVEL"])
+    app.logger.disabled = False
+    app.logger.propagate = True
 
     @app.before_request
     def _assign_request_id() -> None:

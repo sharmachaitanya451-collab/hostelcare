@@ -1,0 +1,69 @@
+services:
+  - type: web
+    name: hostelcare
+    runtime: python
+    plan: free
+    buildCommand: npm --prefix frontend ci && npm --prefix frontend run build && pip install -r backend/requirements.txt
+    startCommand: gunicorn --chdir backend wsgi:app --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 60
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.10"
+      - key: FLASK_ENV
+        value: production
+      - key: SERVE_FRONTEND
+        value: "true"
+      - key: PROXY_FIX_ENABLED
+        value: "true"
+      - key: TRUSTED_PROXY_COUNT
+        value: "1"
+      - key: SESSION_COOKIE_SECURE
+        value: "true"
+      - key: SESSION_COOKIE_SAMESITE
+        value: Lax
+      - key: MAIL_BACKEND
+        value: console
+      - key: MAIL_FROM
+        sync: false
+      - key: MAIL_SMTP_HOST
+        value: smtp.gmail.com
+      - key: MAIL_SMTP_PORT
+        value: "587"
+      - key: MAIL_SMTP_USERNAME
+        sync: false
+      - key: MAIL_SMTP_PASSWORD
+        sync: false
+      - key: MAIL_USE_TLS
+        value: "true"
+      - key: MAIL_TIMEOUT_SECONDS
+        value: "10"
+      - key: RAZORPAY_MODE
+        value: test
+      - key: LOG_LEVEL
+        value: INFO
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: MIGRATION_DATABASE_URL
+        sync: false
+      - key: DB_MIGRATION_ROLE
+        sync: false
+      - key: DB_APP_ROLE
+        value: hostelcare_app
+      - key: APP_BASE_URL
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: HOSTEL_NAME
+        value: HostelCare Campus Hostel
+      - key: HOSTEL_BLOCKS
+        value: A,B,C
+      - key: HOSTEL_ROOM_PATTERN
+        value: ^[A-Z0-9-]+$
+      - key: RAZORPAY_KEY_ID
+        sync: false
+      - key: RAZORPAY_KEY_SECRET
+        sync: false
+      - key: RAZORPAY_WEBHOOK_SECRET
+        sync: false

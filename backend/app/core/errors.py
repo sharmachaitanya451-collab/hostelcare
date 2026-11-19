@@ -9,6 +9,12 @@ def error_response(code: str, message: str, status: int):
 
 
 def register_error_handlers(app: Flask) -> None:
+    from app.auth.service import AuthServiceError
+
+    @app.errorhandler(AuthServiceError)
+    def _auth_service_error(exc: AuthServiceError):
+        return error_response(exc.code, exc.message, exc.status)
+
     @app.errorhandler(HTTPException)
     def _http_error(exc: HTTPException):
         return error_response(

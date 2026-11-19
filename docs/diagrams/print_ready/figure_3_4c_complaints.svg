@@ -1,0 +1,408 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="1080" viewBox="0 0 1220 1080">
+  <rect x="0" y="0" width="1220" height="1080" fill="#FFFFFF"/>
+  <text x="610.0" y="36.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#111827">Figure 3.4c: Module C — Complaints, Assignments, Notes, History &amp; Attachments (6 Tables)</text>
+  <text x="610.0" y="62.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#334155">Uses sequence complaint_ref_seq  |  Append-only child logs &amp; private media metadata</text>
+  <rect x="90.0" y="90.0" width="440.0" height="88.0" rx="18" ry="18" fill="#F8FAFC" stroke="none"/>
+  <line x1="96.0" y1="90.0" x2="104.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="108.0" y1="90.0" x2="116.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="120.0" y1="90.0" x2="128.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="132.0" y1="90.0" x2="140.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="144.0" y1="90.0" x2="152.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="156.0" y1="90.0" x2="164.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="168.0" y1="90.0" x2="176.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="180.0" y1="90.0" x2="188.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="192.0" y1="90.0" x2="200.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="204.0" y1="90.0" x2="212.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="216.0" y1="90.0" x2="224.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="228.0" y1="90.0" x2="236.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="240.0" y1="90.0" x2="248.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="252.0" y1="90.0" x2="260.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="264.0" y1="90.0" x2="272.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="276.0" y1="90.0" x2="284.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="288.0" y1="90.0" x2="296.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="300.0" y1="90.0" x2="308.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="312.0" y1="90.0" x2="320.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="324.0" y1="90.0" x2="332.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="336.0" y1="90.0" x2="344.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="348.0" y1="90.0" x2="356.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="360.0" y1="90.0" x2="368.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="372.0" y1="90.0" x2="380.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="384.0" y1="90.0" x2="392.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="396.0" y1="90.0" x2="404.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="408.0" y1="90.0" x2="416.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="420.0" y1="90.0" x2="428.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="432.0" y1="90.0" x2="440.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="444.0" y1="90.0" x2="452.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="456.0" y1="90.0" x2="464.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="468.0" y1="90.0" x2="476.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="480.0" y1="90.0" x2="488.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="492.0" y1="90.0" x2="500.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="504.0" y1="90.0" x2="512.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="516.0" y1="90.0" x2="524.0" y2="90.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="530.0" y1="96.0" x2="530.0" y2="104.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="530.0" y1="108.0" x2="530.0" y2="116.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="530.0" y1="120.0" x2="530.0" y2="128.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="530.0" y1="132.0" x2="530.0" y2="140.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="530.0" y1="144.0" x2="530.0" y2="152.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="530.0" y1="156.0" x2="530.0" y2="164.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="530.0" y1="168.0" x2="530.0" y2="172.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="524.0" y1="178.0" x2="516.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="512.0" y1="178.0" x2="504.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="500.0" y1="178.0" x2="492.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="488.0" y1="178.0" x2="480.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="476.0" y1="178.0" x2="468.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="464.0" y1="178.0" x2="456.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="452.0" y1="178.0" x2="444.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="440.0" y1="178.0" x2="432.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="428.0" y1="178.0" x2="420.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="416.0" y1="178.0" x2="408.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="404.0" y1="178.0" x2="396.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="392.0" y1="178.0" x2="384.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="380.0" y1="178.0" x2="372.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="368.0" y1="178.0" x2="360.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="356.0" y1="178.0" x2="348.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="344.0" y1="178.0" x2="336.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="332.0" y1="178.0" x2="324.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="320.0" y1="178.0" x2="312.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="308.0" y1="178.0" x2="300.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="296.0" y1="178.0" x2="288.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="284.0" y1="178.0" x2="276.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="272.0" y1="178.0" x2="264.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="260.0" y1="178.0" x2="252.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="248.0" y1="178.0" x2="240.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="236.0" y1="178.0" x2="228.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="224.0" y1="178.0" x2="216.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="212.0" y1="178.0" x2="204.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="200.0" y1="178.0" x2="192.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="188.0" y1="178.0" x2="180.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="176.0" y1="178.0" x2="168.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="164.0" y1="178.0" x2="156.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="152.0" y1="178.0" x2="144.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="140.0" y1="178.0" x2="132.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="128.0" y1="178.0" x2="120.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="116.0" y1="178.0" x2="108.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="104.0" y1="178.0" x2="96.0" y2="178.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="90.0" y1="172.0" x2="90.0" y2="164.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="90.0" y1="160.0" x2="90.0" y2="152.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="90.0" y1="148.0" x2="90.0" y2="140.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="90.0" y1="136.0" x2="90.0" y2="128.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="90.0" y1="124.0" x2="90.0" y2="116.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="90.0" y1="112.0" x2="90.0" y2="104.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="90.0" y1="100.0" x2="90.0" y2="96.0" stroke="#111827" stroke-width="2.0"/>
+  <text x="310.0" y="116.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-style="italic" fill="#334155">&lt;&lt;PostgreSQL Sequence&gt;&gt;</text>
+  <text x="310.0" y="143.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#0F172A">complaint_ref_seq</text>
+  <text x="310.0" y="169.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#334155">CMP-YYYY-NNNNN  -&gt;  complaints.reference_no</text>
+  <rect x="90.0" y="218.0" width="510.0" height="324.0" rx="4" ry="4" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <rect x="90.0" y="218.0" width="510.0" height="44.0" fill="#E2E8F0" stroke="#111827" stroke-width="2.2"/>
+  <text x="104.0" y="247.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#0F172A">complaints</text>
+  <rect x="100.0" y="270.0" width="42.0" height="22.0" rx="3" ry="3" fill="#DBEAFE" stroke="#475569" stroke-width="1.0"/>
+  <text x="121.0" y="286.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">PK</text>
+  <text x="148.0" y="287.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#0F172A">id</text>
+  <text x="588.0" y="287.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">bigint IDENTITY</text>
+  <rect x="100.0" y="300.0" width="42.0" height="22.0" rx="3" ry="3" fill="#F1F5F9" stroke="#475569" stroke-width="1.0"/>
+  <text x="121.0" y="316.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">UQ</text>
+  <text x="148.0" y="317.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">reference_no</text>
+  <text x="588.0" y="317.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">varchar(20) SEQ default</text>
+  <rect x="100.0" y="330.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="121.0" y="346.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="148.0" y="347.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">student_user_id</text>
+  <text x="588.0" y="347.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; [3.4a] student_profiles</text>
+  <rect x="100.0" y="360.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="121.0" y="376.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="148.0" y="377.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">room_id, block_id</text>
+  <text x="588.0" y="377.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; [3.4b] rooms / blocks</text>
+  <text x="104.0" y="407.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">location_type, detail</text>
+  <text x="588.0" y="407.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">&#x27;room&#x27;|&#x27;common_area&#x27;</text>
+  <text x="104.0" y="437.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">title, description</text>
+  <text x="588.0" y="437.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">text &lt;= 5000</text>
+  <text x="104.0" y="467.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">category, priority</text>
+  <text x="588.0" y="467.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">&#x27;low&#x27;|&#x27;medium&#x27;|&#x27;high&#x27;</text>
+  <text x="104.0" y="497.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">status, rejection_reason</text>
+  <text x="588.0" y="497.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">8-state CHECK, lock ver</text>
+  <text x="104.0" y="527.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">completed_at, closed_at</text>
+  <text x="588.0" y="527.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">timestamptz SLA pairs</text>
+  <line x1="310.0" y1="178.0" x2="310.0" y2="184.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="310.0" y1="187.0" x2="310.0" y2="193.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="310.0" y1="196.0" x2="310.0" y2="202.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="310.0" y1="205.0" x2="310.0" y2="211.0" stroke="#111827" stroke-width="2.0"/>
+  <line x1="310.0" y1="214.0" x2="310.0" y2="218.0" stroke="#111827" stroke-width="2.0"/>
+  <polygon points="310.0,218.0 304.5,206.0 315.5,206.0" fill="#111827" stroke="#111827" stroke-width="1.0"/>
+  <text x="322.0" y="203.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" font-style="italic" fill="#111827">nextval() default</text>
+  <rect x="680.0" y="90.0" width="504.0" height="234.0" rx="4" ry="4" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <rect x="680.0" y="90.0" width="504.0" height="44.0" fill="#E2E8F0" stroke="#111827" stroke-width="2.2"/>
+  <text x="694.0" y="119.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#0F172A">complaint_assignments</text>
+  <rect x="690.0" y="142.0" width="42.0" height="22.0" rx="3" ry="3" fill="#DBEAFE" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="158.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">PK</text>
+  <text x="738.0" y="159.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#0F172A">id</text>
+  <text x="1172.0" y="159.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">bigint IDENTITY</text>
+  <rect x="690.0" y="172.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="188.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="738.0" y="189.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">complaint_id</text>
+  <text x="1172.0" y="189.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; complaints.id</text>
+  <rect x="690.0" y="202.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="218.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="738.0" y="219.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">staff_user_id</text>
+  <text x="1172.0" y="219.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; [3.4a] staff_profiles</text>
+  <rect x="690.0" y="232.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="248.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="738.0" y="249.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">assigned_by, ended_by</text>
+  <text x="1172.0" y="249.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; [3.4a] users.id</text>
+  <text x="694.0" y="279.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">assigned_at, accepted_at</text>
+  <text x="1172.0" y="279.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">timestamptz ORDER</text>
+  <text x="694.0" y="309.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">started_at, ended_at</text>
+  <text x="1172.0" y="309.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">uq_assign_one_active</text>
+  <rect x="680.0" y="366.0" width="504.0" height="204.0" rx="4" ry="4" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <rect x="680.0" y="366.0" width="504.0" height="44.0" fill="#F1F5F9" stroke="#111827" stroke-width="2.2"/>
+  <text x="694.0" y="395.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#0F172A">complaint_updates</text>
+  <text x="1172.0" y="394.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="16" font-style="italic" fill="#334155">Append-Only</text>
+  <rect x="690.0" y="418.0" width="42.0" height="22.0" rx="3" ry="3" fill="#DBEAFE" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="434.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">PK</text>
+  <text x="738.0" y="435.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#0F172A">id</text>
+  <text x="1172.0" y="435.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">bigint IDENTITY</text>
+  <rect x="690.0" y="448.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="464.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="738.0" y="465.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">complaint_id</text>
+  <text x="1172.0" y="465.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; complaints.id</text>
+  <rect x="690.0" y="478.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="494.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="738.0" y="495.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">assignment_id</text>
+  <text x="1172.0" y="495.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; complaint_assignments.id</text>
+  <rect x="690.0" y="508.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="524.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="738.0" y="525.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">author_user_id</text>
+  <text x="1172.0" y="525.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; [3.4a] users.id</text>
+  <text x="694.0" y="555.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">update_type, body</text>
+  <text x="1172.0" y="555.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">&#x27;progress&#x27;|&#x27;completion&#x27;</text>
+  <rect x="90.0" y="592.0" width="510.0" height="174.0" rx="4" ry="4" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <rect x="90.0" y="592.0" width="510.0" height="44.0" fill="#F1F5F9" stroke="#111827" stroke-width="2.2"/>
+  <text x="104.0" y="621.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#0F172A">complaint_internal_notes</text>
+  <text x="588.0" y="620.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="16" font-style="italic" fill="#334155">Isolated Append-Only</text>
+  <rect x="100.0" y="644.0" width="42.0" height="22.0" rx="3" ry="3" fill="#DBEAFE" stroke="#475569" stroke-width="1.0"/>
+  <text x="121.0" y="660.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">PK</text>
+  <text x="148.0" y="661.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#0F172A">id</text>
+  <text x="588.0" y="661.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">bigint IDENTITY</text>
+  <rect x="100.0" y="674.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="121.0" y="690.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="148.0" y="691.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">complaint_id</text>
+  <text x="588.0" y="691.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; complaints.id</text>
+  <rect x="100.0" y="704.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="121.0" y="720.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="148.0" y="721.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">author_user_id</text>
+  <text x="588.0" y="721.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; [3.4a] users.id</text>
+  <text x="104.0" y="751.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">body, created_at</text>
+  <text x="588.0" y="751.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">Isolated Admin notes</text>
+  <rect x="680.0" y="614.0" width="504.0" height="204.0" rx="4" ry="4" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <rect x="680.0" y="614.0" width="504.0" height="44.0" fill="#F1F5F9" stroke="#111827" stroke-width="2.2"/>
+  <text x="694.0" y="643.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#0F172A">complaint_history</text>
+  <text x="1172.0" y="642.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="16" font-style="italic" fill="#334155">Append-Only</text>
+  <rect x="690.0" y="666.0" width="42.0" height="22.0" rx="3" ry="3" fill="#DBEAFE" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="682.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">PK</text>
+  <text x="738.0" y="683.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#0F172A">id</text>
+  <text x="1172.0" y="683.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">bigint IDENTITY</text>
+  <rect x="690.0" y="696.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="712.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="738.0" y="713.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">complaint_id</text>
+  <text x="1172.0" y="713.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; complaints.id</text>
+  <rect x="690.0" y="726.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="742.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="738.0" y="743.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">actor_user_id</text>
+  <text x="1172.0" y="743.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; [3.4a] users.id (nullable)</text>
+  <rect x="690.0" y="756.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="711.0" y="772.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="738.0" y="773.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">assignment_id, update_id</text>
+  <text x="1172.0" y="773.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; child refs (nullable)</text>
+  <text x="694.0" y="803.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">action, from_status, to_status</text>
+  <text x="1172.0" y="803.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">Audit transition log</text>
+  <rect x="90.0" y="812.0" width="510.0" height="234.0" rx="4" ry="4" fill="#FFFFFF" stroke="#111827" stroke-width="2.2"/>
+  <rect x="90.0" y="812.0" width="510.0" height="44.0" fill="#E2E8F0" stroke="#111827" stroke-width="2.2"/>
+  <text x="104.0" y="841.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#0F172A">complaint_attachments</text>
+  <text x="588.0" y="840.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="16" font-style="italic" fill="#334155">Migration 0002</text>
+  <rect x="100.0" y="864.0" width="42.0" height="22.0" rx="3" ry="3" fill="#DBEAFE" stroke="#475569" stroke-width="1.0"/>
+  <text x="121.0" y="880.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">PK</text>
+  <text x="148.0" y="881.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#0F172A">id</text>
+  <text x="588.0" y="881.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">bigint IDENTITY</text>
+  <rect x="100.0" y="894.0" width="42.0" height="22.0" rx="3" ry="3" fill="#F1F5F9" stroke="#475569" stroke-width="1.0"/>
+  <text x="121.0" y="910.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">UQ</text>
+  <text x="148.0" y="911.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">public_id</text>
+  <text x="588.0" y="911.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">uuid</text>
+  <rect x="100.0" y="924.0" width="42.0" height="22.0" rx="3" ry="3" fill="#FEF3C7" stroke="#475569" stroke-width="1.0"/>
+  <text x="121.0" y="940.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">FK</text>
+  <text x="148.0" y="941.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">complaint_id</text>
+  <text x="588.0" y="941.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">-&gt; complaints.id</text>
+  <text x="104.0" y="971.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">storage_path, orig_filename</text>
+  <text x="588.0" y="971.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">private store</text>
+  <text x="104.0" y="1001.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">mime_type, file_size_bytes</text>
+  <text x="588.0" y="1001.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">JPEG/PNG/WebP &lt;=5 MB</text>
+  <text x="104.0" y="1031.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0F172A">checksum_sha256</text>
+  <text x="588.0" y="1031.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#475569">char(64) hex</text>
+  <polyline points="600.0,275.0 640.0,275.0 640.0,175.0 680.0,175.0" fill="none" stroke="#1E293B" stroke-width="2.0" stroke-linejoin="round"/>
+  <line x1="607.0" y1="267.0" x2="607.0" y2="283.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="613.0" y1="267.0" x2="613.0" y2="283.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="667.0" y1="175.0" x2="680.0" y2="166.5" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="667.0" y1="175.0" x2="680.0" y2="183.5" stroke="#1E293B" stroke-width="2.0"/>
+  <circle cx="659.0" cy="175.0" r="5.0" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.0"/>
+  <rect x="599.2" y="211.0" width="81.7" height="26.0" rx="4" ry="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.0"/>
+  <text x="640.0" y="229.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#1E293B">assigned</text>
+  <polyline points="600.0,415.0 680.0,415.0" fill="none" stroke="#1E293B" stroke-width="2.0" stroke-linejoin="round"/>
+  <line x1="607.0" y1="407.0" x2="607.0" y2="423.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="613.0" y1="407.0" x2="613.0" y2="423.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="667.0" y1="415.0" x2="680.0" y2="406.5" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="667.0" y1="415.0" x2="680.0" y2="423.5" stroke="#1E293B" stroke-width="2.0"/>
+  <circle cx="659.0" cy="415.0" r="5.0" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.0"/>
+  <rect x="603.6" y="383.0" width="72.7" height="26.0" rx="4" ry="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.0"/>
+  <text x="640.0" y="401.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#1E293B">updates</text>
+  <polyline points="932.0,324.0 932.0,366.0" fill="none" stroke="#1E293B" stroke-width="2.0" stroke-linejoin="round"/>
+  <line x1="940.0" y1="331.0" x2="924.0" y2="331.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="940.0" y1="337.0" x2="924.0" y2="337.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="932.0" y1="353.0" x2="940.5" y2="366.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="932.0" y1="353.0" x2="923.5" y2="366.0" stroke="#1E293B" stroke-width="2.0"/>
+  <circle cx="932.0" cy="345.0" r="5.0" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.0"/>
+  <polyline points="600.0,480.0 640.0,480.0 640.0,686.0 680.0,686.0" fill="none" stroke="#1E293B" stroke-width="2.0" stroke-linejoin="round"/>
+  <line x1="607.0" y1="472.0" x2="607.0" y2="488.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="613.0" y1="472.0" x2="613.0" y2="488.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="667.0" y1="686.0" x2="680.0" y2="677.5" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="667.0" y1="686.0" x2="680.0" y2="694.5" stroke="#1E293B" stroke-width="2.0"/>
+  <circle cx="659.0" cy="686.0" r="5.0" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.0"/>
+  <rect x="603.6" y="547.0" width="72.7" height="26.0" rx="4" ry="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.0"/>
+  <text x="640.0" y="565.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#1E293B">history</text>
+  <polyline points="345.0,542.0 345.0,592.0" fill="none" stroke="#1E293B" stroke-width="2.0" stroke-linejoin="round"/>
+  <line x1="353.0" y1="549.0" x2="337.0" y2="549.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="353.0" y1="555.0" x2="337.0" y2="555.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="345.0" y1="579.0" x2="353.5" y2="592.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="345.0" y1="579.0" x2="336.5" y2="592.0" stroke="#1E293B" stroke-width="2.0"/>
+  <circle cx="345.0" cy="571.0" r="5.0" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.0"/>
+  <rect x="364.6" y="554.0" width="54.8" height="26.0" rx="4" ry="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.0"/>
+  <text x="392.0" y="572.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#1E293B">notes</text>
+  <polyline points="90.0,490.0 50.0,490.0 50.0,902.0 90.0,902.0" fill="none" stroke="#1E293B" stroke-width="2.0" stroke-linejoin="round"/>
+  <line x1="83.0" y1="498.0" x2="83.0" y2="482.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="77.0" y1="498.0" x2="77.0" y2="482.0" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="77.0" y1="902.0" x2="90.0" y2="893.5" stroke="#1E293B" stroke-width="2.0"/>
+  <line x1="77.0" y1="902.0" x2="90.0" y2="910.5" stroke="#1E293B" stroke-width="2.0"/>
+  <circle cx="69.0" cy="902.0" r="5.0" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.0"/>
+  <rect x="-5.1" y="668.0" width="102.2" height="24.0" rx="4" ry="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.0"/>
+  <text x="46.0" y="684.9" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1E293B">0..3 photos</text>
+  <rect x="680.0" y="862.0" width="504.0" height="162.0" rx="8" ry="8" fill="#F8FAFC" stroke="none"/>
+  <line x1="686.0" y1="862.0" x2="693.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="697.0" y1="862.0" x2="704.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="708.0" y1="862.0" x2="715.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="719.0" y1="862.0" x2="726.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="730.0" y1="862.0" x2="737.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="741.0" y1="862.0" x2="748.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="752.0" y1="862.0" x2="759.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="763.0" y1="862.0" x2="770.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="774.0" y1="862.0" x2="781.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="785.0" y1="862.0" x2="792.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="796.0" y1="862.0" x2="803.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="807.0" y1="862.0" x2="814.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="818.0" y1="862.0" x2="825.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="829.0" y1="862.0" x2="836.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="840.0" y1="862.0" x2="847.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="851.0" y1="862.0" x2="858.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="862.0" y1="862.0" x2="869.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="873.0" y1="862.0" x2="880.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="884.0" y1="862.0" x2="891.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="895.0" y1="862.0" x2="902.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="906.0" y1="862.0" x2="913.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="917.0" y1="862.0" x2="924.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="928.0" y1="862.0" x2="935.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="939.0" y1="862.0" x2="946.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="950.0" y1="862.0" x2="957.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="961.0" y1="862.0" x2="968.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="972.0" y1="862.0" x2="979.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="983.0" y1="862.0" x2="990.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="994.0" y1="862.0" x2="1001.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1005.0" y1="862.0" x2="1012.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1016.0" y1="862.0" x2="1023.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1027.0" y1="862.0" x2="1034.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1038.0" y1="862.0" x2="1045.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1049.0" y1="862.0" x2="1056.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1060.0" y1="862.0" x2="1067.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1071.0" y1="862.0" x2="1078.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1082.0" y1="862.0" x2="1089.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1093.0" y1="862.0" x2="1100.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1104.0" y1="862.0" x2="1111.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1115.0" y1="862.0" x2="1122.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1126.0" y1="862.0" x2="1133.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1137.0" y1="862.0" x2="1144.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1148.0" y1="862.0" x2="1155.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1159.0" y1="862.0" x2="1166.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1170.0" y1="862.0" x2="1177.0" y2="862.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="868.0" x2="1184.0" y2="875.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="879.0" x2="1184.0" y2="886.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="890.0" x2="1184.0" y2="897.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="901.0" x2="1184.0" y2="908.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="912.0" x2="1184.0" y2="919.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="923.0" x2="1184.0" y2="930.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="934.0" x2="1184.0" y2="941.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="945.0" x2="1184.0" y2="952.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="956.0" x2="1184.0" y2="963.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="967.0" x2="1184.0" y2="974.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="978.0" x2="1184.0" y2="985.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="989.0" x2="1184.0" y2="996.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="1000.0" x2="1184.0" y2="1007.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1184.0" y1="1011.0" x2="1184.0" y2="1018.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1178.0" y1="1024.0" x2="1171.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1167.0" y1="1024.0" x2="1160.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1156.0" y1="1024.0" x2="1149.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1145.0" y1="1024.0" x2="1138.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1134.0" y1="1024.0" x2="1127.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1123.0" y1="1024.0" x2="1116.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1112.0" y1="1024.0" x2="1105.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1101.0" y1="1024.0" x2="1094.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1090.0" y1="1024.0" x2="1083.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1079.0" y1="1024.0" x2="1072.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1068.0" y1="1024.0" x2="1061.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1057.0" y1="1024.0" x2="1050.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1046.0" y1="1024.0" x2="1039.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1035.0" y1="1024.0" x2="1028.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1024.0" y1="1024.0" x2="1017.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1013.0" y1="1024.0" x2="1006.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="1002.0" y1="1024.0" x2="995.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="991.0" y1="1024.0" x2="984.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="980.0" y1="1024.0" x2="973.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="969.0" y1="1024.0" x2="962.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="958.0" y1="1024.0" x2="951.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="947.0" y1="1024.0" x2="940.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="936.0" y1="1024.0" x2="929.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="925.0" y1="1024.0" x2="918.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="914.0" y1="1024.0" x2="907.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="903.0" y1="1024.0" x2="896.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="892.0" y1="1024.0" x2="885.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="881.0" y1="1024.0" x2="874.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="870.0" y1="1024.0" x2="863.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="859.0" y1="1024.0" x2="852.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="848.0" y1="1024.0" x2="841.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="837.0" y1="1024.0" x2="830.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="826.0" y1="1024.0" x2="819.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="815.0" y1="1024.0" x2="808.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="804.0" y1="1024.0" x2="797.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="793.0" y1="1024.0" x2="786.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="782.0" y1="1024.0" x2="775.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="771.0" y1="1024.0" x2="764.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="760.0" y1="1024.0" x2="753.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="749.0" y1="1024.0" x2="742.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="738.0" y1="1024.0" x2="731.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="727.0" y1="1024.0" x2="720.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="716.0" y1="1024.0" x2="709.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="705.0" y1="1024.0" x2="698.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="694.0" y1="1024.0" x2="687.0" y2="1024.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="1018.0" x2="680.0" y2="1011.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="1007.0" x2="680.0" y2="1000.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="996.0" x2="680.0" y2="989.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="985.0" x2="680.0" y2="978.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="974.0" x2="680.0" y2="967.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="963.0" x2="680.0" y2="956.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="952.0" x2="680.0" y2="945.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="941.0" x2="680.0" y2="934.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="930.0" x2="680.0" y2="923.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="919.0" x2="680.0" y2="912.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="908.0" x2="680.0" y2="901.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="897.0" x2="680.0" y2="890.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="886.0" x2="680.0" y2="879.0" stroke="#334155" stroke-width="1.8"/>
+  <line x1="680.0" y1="875.0" x2="680.0" y2="868.0" stroke="#334155" stroke-width="1.8"/>
+  <text x="698.0" y="892.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#111827">Cross-Module Foreign Keys:</text>
+  <text x="698.0" y="922.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1E293B">• student_user_id -&gt; [3.4a] student_profiles</text>
+  <text x="698.0" y="950.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1E293B">• staff_user_id -&gt; [3.4a] staff_profiles</text>
+  <text x="698.0" y="978.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1E293B">• room_id, block_id -&gt; [3.4b] rooms, blocks</text>
+  <text x="698.0" y="1006.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1E293B">• actor / author / assigner FKs -&gt; [3.4a] users</text>
+</svg>

@@ -16,11 +16,24 @@ npm-debug.log*
 .env
 .env.*
 !.env.example
+backend/demo-credentials.local.txt
 
-# Uploads and runtime data
+# Uploads, dumps and runtime data
 backend/instance/
 backend/uploads/
 *.log
+*.dump
+*.pgdump
+*.sql.bak
+*.sqlite3
+backups/
+
+# Conversation exports and personal report/presentation binaries
+docs/conversation_export/
+docs/conversation_export.zip
+docs/*.docx
+docs/*.pdf
+docs/final/
 
 # OS / editor
 .DS_Store

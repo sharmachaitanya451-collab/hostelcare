@@ -11,11 +11,8 @@ SECURITY INVARIANTS:
 
 from __future__ import annotations
 
-import contextlib
 import hashlib
 import io
-import os
-import tempfile
 import uuid
 import warnings
 from collections.abc import Iterable
@@ -29,6 +26,14 @@ from werkzeug.datastructures import FileStorage
 from werkzeug.utils import secure_filename
 
 from app.auth.service import AuthServiceError
+from app.complaints.storage import (
+    RetrievedAttachment,
+    cleanup_storage_refs,
+    get_local_storage,
+    get_storage_backend_for_ref,
+    get_write_storage_backend,
+    is_r2_storage_ref,
+)
 from app.models.complaints import ComplaintAttachment
 
 MAX_ATTACHMENTS_PER_COMPLAINT = 3
@@ -61,7 +66,12 @@ class StagedAttachment:
     file_size_bytes: int
     mime_type: str
     checksum_sha256: str
-    abs_path: Path
+    abs_path: Path | None = None
+
+    @property
+    def cleanup_ref(self) -> Path | str:
+        """Return the safest target handle for rollback cleanup (`Path` for local, key for R2)."""
+        return self.abs_path if self.abs_path is not None else self.storage_path
 
 
 def get_max_attachments() -> int:
@@ -286,90 +296,63 @@ def validate_uploaded_photos(files: list[FileStorage]) -> list[ValidatedImage]:
 
 
 def cleanup_staged_files(paths: Iterable[Path | str]) -> None:
-    """Best-effort cleanup of staged/persisted files when a request fails or rolls back."""
-    for item in paths:
-        with contextlib.suppress(OSError):
-            Path(item).unlink(missing_ok=True)
+    """Best-effort cleanup of staged/persisted files or R2 objects when a request rolls back."""
+    cleanup_storage_refs(paths)
 
 
 def persist_validated_images(images: list[ValidatedImage]) -> list[StagedAttachment]:
-    """Atomically write validated images to the private complaint attachment directory.
+    """Persist validated images to the configured backend (`local` or `r2`).
 
-    If writing any file fails, all previously written files in this batch are deleted.
+    If persisting any item in the batch fails, all previously stored files/objects
+    from that batch are deleted before re-raising.
     """
     if not images:
         return []
 
-    base_dir = get_attachment_base_dir()
+    backend = get_write_storage_backend()
     now_prefix = datetime.now(UTC).strftime("%Y/%m")
     staged: list[StagedAttachment] = []
-    created_paths: list[Path] = []
+    created_refs: list[Path | str] = []
 
     try:
         for img in images:
-            rel_path = f"{now_prefix}/{uuid.uuid4().hex}.{img.ext}"
-            target_path = (base_dir / rel_path).resolve()
-            if not target_path.is_relative_to(base_dir):
-                raise AuthServiceError("invalid_storage_path", "Invalid attachment path.", 500)
+            rel_key = f"{now_prefix}/{uuid.uuid4().hex}.{img.ext}"
+            storage_ref = backend.save(
+                rel_key,
+                img.data,
+                content_type=img.mime_type,
+                checksum_sha256=img.checksum_sha256,
+            )
+            abs_path: Path | None = None
+            if not is_r2_storage_ref(storage_ref):
+                abs_path = get_local_storage().resolve_path(storage_ref)
+                created_refs.append(abs_path)
+            else:
+                created_refs.append(storage_ref)
 
-            target_path.parent.mkdir(parents=True, exist_ok=True)
-            tmp_path: Path | None = None
-            try:
-                with tempfile.NamedTemporaryFile(
-                    mode="wb",
-                    dir=target_path.parent,
-                    prefix=".tmp_",
-                    suffix=f".{img.ext}",
-                    delete=False,
-                ) as tmp_file:
-                    tmp_path = Path(tmp_file.name)
-                    tmp_file.write(img.data)
-                    tmp_file.flush()
-                    os.fsync(tmp_file.fileno())
-                os.replace(tmp_path, target_path)
-            except Exception as exc:
-                if tmp_path is not None:
-                    cleanup_staged_files([tmp_path])
-                raise AuthServiceError(
-                    "attachment_storage_error",
-                    "Failed to store complaint photo attachment safely.",
-                    500,
-                ) from exc
-
-            created_paths.append(target_path)
             staged.append(
                 StagedAttachment(
-                    storage_path=rel_path,
+                    storage_path=storage_ref,
                     original_filename=img.original_filename,
                     file_size_bytes=img.file_size_bytes,
                     mime_type=img.mime_type,
                     checksum_sha256=img.checksum_sha256,
-                    abs_path=target_path,
+                    abs_path=abs_path,
                 )
             )
     except Exception:
-        cleanup_staged_files(created_paths)
+        cleanup_staged_files(created_refs)
         raise
 
     return staged
 
 
 def resolve_attachment_file_path(attachment: ComplaintAttachment) -> Path:
-    """Safely resolve an attachment's private filesystem path and confirm it exists."""
-    base_dir = get_attachment_base_dir()
-    rel = Path(attachment.storage_path)
-    if rel.is_absolute():
-        raise AuthServiceError(
-            "attachment_file_missing",
-            "The requested attachment file is unavailable.",
-            404,
-        )
+    """Safely resolve a local attachment's private filesystem path and confirm it exists."""
+    return get_local_storage().resolve_path(attachment.storage_path)
 
-    resolved = (base_dir / rel).resolve()
-    if not resolved.is_relative_to(base_dir) or not resolved.is_file():
-        raise AuthServiceError(
-            "attachment_file_missing",
-            "The requested attachment file is unavailable.",
-            404,
-        )
-    return resolved
+
+def retrieve_attachment_content(attachment: ComplaintAttachment) -> RetrievedAttachment:
+    """Retrieve attachment bytes or path from the appropriate backend (`local` or `r2`)."""
+    backend = get_storage_backend_for_ref(attachment.storage_path)
+    return backend.retrieve(attachment.storage_path)

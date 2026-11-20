@@ -261,7 +261,7 @@ def submit_student_complaint(
         db.session.commit()
     except Exception:
         db.session.rollback()
-        cleanup_staged_files([s.abs_path for s in staged_attachments])
+        cleanup_staged_files([s.cleanup_ref for s in staged_attachments])
         raise
 
     loaded = resolve_complaint_by_identifier(complaint.reference_no)
@@ -337,7 +337,7 @@ def attach_student_complaint_photos(
         db.session.commit()
     except Exception:
         db.session.rollback()
-        cleanup_staged_files([s.abs_path for s in staged_attachments])
+        cleanup_staged_files([s.cleanup_ref for s in staged_attachments])
         raise
 
     loaded = resolve_complaint_by_identifier(complaint.reference_no)

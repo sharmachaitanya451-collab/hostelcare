@@ -14,6 +14,7 @@ from app.analytics.routes import bp as analytics_bp  # noqa: E402
 from app.auth.cli import create_admin_cmd, purge_reset_tokens_cmd  # noqa: E402
 from app.auth.routes import bp as auth_bp  # noqa: E402
 from app.auth.security import init_auth_security  # noqa: E402
+from app.complaints.migrate_attachments_cli import migrate_attachments_r2_cmd  # noqa: E402
 from app.complaints.routes import bp as complaints_bp  # noqa: E402
 from app.config import CONFIGS  # noqa: E402
 from app.core.db_cli import db_cli  # noqa: E402
@@ -61,6 +62,7 @@ def create_app(config_name: str | None = None) -> Flask:
     app.cli.add_command(db_cli)
     app.cli.add_command(create_admin_cmd)
     app.cli.add_command(purge_reset_tokens_cmd)
+    app.cli.add_command(migrate_attachments_r2_cmd)
 
     if app.config.get("PROXY_FIX_ENABLED"):
         hop_count = int(app.config.get("TRUSTED_PROXY_COUNT", 1))

@@ -50,7 +50,10 @@ class BaseConfig:
         os.environ.get("MAX_CONTENT_LENGTH", str(20 * 1024 * 1024))
     )  # 20 MB request cap (accommodates 3x 5 MB photos + multipart overhead)
 
-    # Complaint Photo Attachments (Private Filesystem Storage)
+    # Complaint Photo Attachments (Local Filesystem or Private Cloudflare R2 Storage)
+    COMPLAINT_ATTACHMENT_STORAGE_BACKEND = (
+        os.environ.get("COMPLAINT_ATTACHMENT_STORAGE_BACKEND", "local").strip().lower() or "local"
+    )
     COMPLAINT_ATTACHMENT_DIR = os.environ.get(
         "COMPLAINT_ATTACHMENT_DIR",
         str(BACKEND_ROOT / "uploads" / "complaints"),
@@ -59,6 +62,17 @@ class BaseConfig:
     COMPLAINT_MAX_ATTACHMENT_BYTES = int(
         os.environ.get("COMPLAINT_MAX_ATTACHMENT_BYTES", str(5 * 1024 * 1024))
     )
+    R2_ACCOUNT_ID = os.environ.get("R2_ACCOUNT_ID", "").strip()
+    R2_ACCESS_KEY_ID = os.environ.get("R2_ACCESS_KEY_ID", "").strip()
+    R2_SECRET_ACCESS_KEY = os.environ.get("R2_SECRET_ACCESS_KEY", "").strip()
+    R2_BUCKET_NAME = os.environ.get("R2_BUCKET_NAME", "").strip()
+    R2_ENDPOINT_URL = (
+        os.environ.get("R2_ENDPOINT_URL", "").strip()
+        or (f"https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com" if R2_ACCOUNT_ID else "")
+    ).rstrip("/")
+    R2_REGION = os.environ.get("R2_REGION", "auto").strip() or "auto"
+    R2_CONNECT_TIMEOUT_SECONDS = int(os.environ.get("R2_CONNECT_TIMEOUT_SECONDS", "5"))
+    R2_READ_TIMEOUT_SECONDS = int(os.environ.get("R2_READ_TIMEOUT_SECONDS", "15"))
 
     # Complaint SLA Targets (resolution hours by priority)
     COMPLAINT_SLA_HOURS = {
@@ -132,6 +146,7 @@ class TestingConfig(BaseConfig):
     SERVE_FRONTEND = False
     PROXY_FIX_ENABLED = False
     MAIL_BACKEND = "console"
+    COMPLAINT_ATTACHMENT_STORAGE_BACKEND = "local"
     COMPLAINT_ATTACHMENT_DIR = str(BACKEND_ROOT / "uploads" / "complaints_test")
 
 
@@ -153,6 +168,18 @@ class ProductionConfig(BaseConfig):
             raise RuntimeError("DATABASE_URL must be set in production")
         if cls.RAZORPAY_MODE != "test" or cls.RAZORPAY_KEY_ID.startswith("rzp_live_"):
             raise RuntimeError("HostelCare permits Razorpay Test Mode only")
+        if cls.COMPLAINT_ATTACHMENT_STORAGE_BACKEND not in ("local", "r2"):
+            raise RuntimeError("COMPLAINT_ATTACHMENT_STORAGE_BACKEND must be 'local' or 'r2'")
+        if cls.COMPLAINT_ATTACHMENT_STORAGE_BACKEND == "r2":
+            if not cls.R2_BUCKET_NAME or not cls.R2_ACCESS_KEY_ID or not cls.R2_SECRET_ACCESS_KEY:
+                raise RuntimeError(
+                    "R2_BUCKET_NAME, R2_ACCESS_KEY_ID, and R2_SECRET_ACCESS_KEY "
+                    "are required when using R2 storage"
+                )
+            if not cls.R2_ENDPOINT_URL:
+                raise RuntimeError(
+                    "R2_ENDPOINT_URL or R2_ACCOUNT_ID is required when using R2 storage"
+                )
 
 
 CONFIGS = {

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import io
 import json
 import uuid
 from typing import Any
@@ -25,7 +26,7 @@ from app.complaints.admin_service import (
     return_complaint_for_rework,
     update_admin_complaint,
 )
-from app.complaints.attachment_service import resolve_attachment_file_path
+from app.complaints.attachment_service import retrieve_attachment_content
 from app.complaints.serializers import (
     resolve_complaint_by_identifier,
     serialize_complaint_for_staff,
@@ -404,14 +405,23 @@ def get_complaint_attachment_route(complaint_id: str, attachment_id: str):
     if attachment is None:
         raise AuthServiceError("attachment_not_found", "Attachment not found.", 404)
 
-    file_path = resolve_attachment_file_path(attachment)
-    response = send_file(
-        file_path,
-        mimetype=attachment.mime_type,
-        as_attachment=False,
-        download_name=attachment.original_filename,
-        conditional=True,
-    )
+    retrieved = retrieve_attachment_content(attachment)
+    if retrieved.file_path is not None:
+        response = send_file(
+            retrieved.file_path,
+            mimetype=attachment.mime_type,
+            as_attachment=False,
+            download_name=attachment.original_filename,
+            conditional=True,
+        )
+    else:
+        response = send_file(
+            io.BytesIO(retrieved.data or b""),
+            mimetype=attachment.mime_type,
+            as_attachment=False,
+            download_name=attachment.original_filename,
+            conditional=False,
+        )
     response.headers["X-Content-Type-Options"] = "nosniff"
     response.headers["Content-Security-Policy"] = "default-src 'none'; img-src 'self'; sandbox"
     response.headers["Cache-Control"] = "no-store"

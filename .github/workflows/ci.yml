@@ -15,15 +15,16 @@ jobs:
       postgres:
         image: postgres:18
         env:
-          POSTGRES_USER: hostelcare_app
-          POSTGRES_PASSWORD: ci_password
-          POSTGRES_DB: hostelcare_test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: ci_postgres_password
+          POSTGRES_DB: postgres
         ports: ["5432:5432"]
         options: >-
-          --health-cmd "pg_isready -U hostelcare_app" --health-interval 5s
+          --health-cmd "pg_isready -U postgres -d postgres" --health-interval 5s
           --health-timeout 5s --health-retries 10
     env:
-      TEST_DATABASE_URL: postgresql+psycopg://hostelcare_app:ci_password@localhost:5432/hostelcare_test
+      TEST_DATABASE_URL: postgresql+psycopg://hostelcare_app:ci_app_password@localhost:5432/hostelcare_test
+      TEST_MIGRATION_DATABASE_URL: postgresql+psycopg://hostelcare_owner:ci_owner_password@localhost:5432/hostelcare_test
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -34,6 +35,15 @@ jobs:
       - run: pip install -r requirements-dev.txt
       - run: ruff check .
       - run: ruff format --check .
+      - name: Initialize PostgreSQL roles and test database
+        env:
+          PGPASSWORD: ci_postgres_password
+        run: |
+          command -v psql >/dev/null 2>&1 || (sudo apt-get update && sudo apt-get install -y postgresql-client)
+          psql -h localhost -p 5432 -U postgres -d postgres -v ON_ERROR_STOP=1 -f ../database/setup_postgres.sql
+          psql -h localhost -p 5432 -U postgres -d postgres -v ON_ERROR_STOP=1 \
+            -c "ALTER ROLE hostelcare_owner WITH PASSWORD 'ci_owner_password';" \
+            -c "ALTER ROLE hostelcare_app WITH PASSWORD 'ci_app_password';"
       - run: pytest
 
   frontend:

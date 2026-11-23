@@ -65,9 +65,7 @@ export function AdminRoomsPage() {
   const [allocStudentId, setAllocStudentId] = useState('')
   const [allocRoomId, setAllocRoomId] = useState('')
   const [allocBedNumber, setAllocBedNumber] = useState('1')
-  const [allocStartDate, setAllocStartDate] = useState(
-    () => new Date().toISOString().split('T')[0]
-  )
+  const [allocStartDate, setAllocStartDate] = useState(() => new Date().toISOString().split('T')[0])
 
   // Form states - Transfer
   const [transferTargetRoomId, setTransferTargetRoomId] = useState('')
@@ -109,8 +107,7 @@ export function AdminRoomsPage() {
         !q ||
         (rm.room_number || rm.roomNumber || '').toLowerCase().includes(q) ||
         (rm.block || '').toLowerCase().includes(q) ||
-        (Array.isArray(rm.residents) &&
-          rm.residents.some((name) => name.toLowerCase().includes(q)))
+        (Array.isArray(rm.residents) && rm.residents.some((name) => name.toLowerCase().includes(q)))
 
       const matchesBlock =
         selectedBlockFilter === 'ALL' ||
@@ -151,16 +148,16 @@ export function AdminRoomsPage() {
   // Vacant beds in selected room for allocation modal
   const targetRoomForAlloc = useMemo(() => {
     if (!allocRoomId) return null
-    return (rooms || []).find((r) => String(r.id) === String(allocRoomId) || String(r.room_number) === String(allocRoomId))
+    return (rooms || []).find(
+      (r) => String(r.id) === String(allocRoomId) || String(r.room_number) === String(allocRoomId),
+    )
   }, [rooms, allocRoomId])
 
   const vacantBedsForAlloc = useMemo(() => {
     if (!targetRoomForAlloc) return []
     const capacity = Number(targetRoomForAlloc.capacity || 0)
     const occupiedBeds = new Set(
-      (targetRoomForAlloc.beds || [])
-        .filter((b) => b.occupied)
-        .map((b) => Number(b.bed_number))
+      (targetRoomForAlloc.beds || []).filter((b) => b.occupied).map((b) => Number(b.bed_number)),
     )
     const vacant = []
     for (let i = 1; i <= capacity; i++) {
@@ -172,16 +169,18 @@ export function AdminRoomsPage() {
   // Vacant beds in target room for transfer modal
   const targetRoomForTransfer = useMemo(() => {
     if (!transferTargetRoomId) return null
-    return (rooms || []).find((r) => String(r.id) === String(transferTargetRoomId) || String(r.room_number) === String(transferTargetRoomId))
+    return (rooms || []).find(
+      (r) =>
+        String(r.id) === String(transferTargetRoomId) ||
+        String(r.room_number) === String(transferTargetRoomId),
+    )
   }, [rooms, transferTargetRoomId])
 
   const vacantBedsForTransfer = useMemo(() => {
     if (!targetRoomForTransfer) return []
     const capacity = Number(targetRoomForTransfer.capacity || 0)
     const occupiedBeds = new Set(
-      (targetRoomForTransfer.beds || [])
-        .filter((b) => b.occupied)
-        .map((b) => Number(b.bed_number))
+      (targetRoomForTransfer.beds || []).filter((b) => b.occupied).map((b) => Number(b.bed_number)),
     )
     const vacant = []
     for (let i = 1; i <= capacity; i++) {
@@ -214,7 +213,8 @@ export function AdminRoomsPage() {
     }
 
     if (trimmedCode && !/^[A-Z0-9]{1,10}$/.test(trimmedCode)) {
-      clientErrors.code = 'Block code must be 1 to 10 alphanumeric uppercase characters (e.g. "BLKA", "NORTH").'
+      clientErrors.code =
+        'Block code must be 1 to 10 alphanumeric uppercase characters (e.g. "BLKA", "NORTH").'
     }
 
     if (blockOrder !== '' && (isNaN(parsedOrder) || parsedOrder < 0)) {
@@ -343,7 +343,7 @@ export function AdminRoomsPage() {
         start_date: allocStartDate,
       })
       setNotice(
-        `Allocated ${alloc.student?.fullName || 'student'} to Room ${alloc.room_number} (Bed ${alloc.bed_number}).`
+        `Allocated ${alloc.student?.fullName || 'student'} to Room ${alloc.room_number} (Bed ${alloc.bed_number}).`,
       )
       setShowAllocateModal(false)
       setAllocStudentId('')
@@ -375,7 +375,7 @@ export function AdminRoomsPage() {
       })
       const newAlloc = res.allocation
       setNotice(
-        `Transferred ${newAlloc.student?.fullName || 'student'} from Room ${transferTarget.room_number} to Room ${newAlloc.room_number} Bed ${newAlloc.bed_number}.`
+        `Transferred ${newAlloc.student?.fullName || 'student'} from Room ${transferTarget.room_number} to Room ${newAlloc.room_number} Bed ${newAlloc.bed_number}.`,
       )
       setTransferTarget(null)
       setTransferReason('')
@@ -402,7 +402,7 @@ export function AdminRoomsPage() {
         reason: endReason.trim(),
       })
       setNotice(
-        `Ended room allocation for ${ended.student?.fullName || 'student'} in Room ${ended.room_number}.`
+        `Ended room allocation for ${ended.student?.fullName || 'student'} in Room ${ended.room_number}.`,
       )
       setEndTarget(null)
       setEndReason('')
@@ -687,10 +687,13 @@ export function AdminRoomsPage() {
                             ? rm.students.map((name, idx) => ({
                                 bed_number: idx + 1,
                                 occupied: name !== '(Vacant Bed)' && name !== 'Vacant',
-                                student_name: name !== '(Vacant Bed)' && name !== 'Vacant' ? name : null,
+                                student_name:
+                                  name !== '(Vacant Bed)' && name !== 'Vacant' ? name : null,
                               }))
                             : Array.from({ length: capacity }, (_, idx) => {
-                                const resName = Array.isArray(rm.residents) ? rm.residents[idx] : null
+                                const resName = Array.isArray(rm.residents)
+                                  ? rm.residents[idx]
+                                  : null
                                 return {
                                   bed_number: idx + 1,
                                   occupied: Boolean(resName),
@@ -699,7 +702,7 @@ export function AdminRoomsPage() {
                               })
                         ).map((bed) => {
                           const resident = (rm.resident_details || rm.residentDetails || []).find(
-                            (r) => Number(r.bed_number || r.bedNumber) === bed.bed_number
+                            (r) => Number(r.bed_number || r.bedNumber) === bed.bed_number,
                           )
 
                           return (
@@ -817,7 +820,8 @@ export function AdminRoomsPage() {
                 ) : blocks.length === 0 ? (
                   <tr>
                     <td colSpan={9} className="py-12 text-center text-[#292039]/60">
-                      No blocks found. Click &quot;+ Add Block&quot; to configure your first hostel wing.
+                      No blocks found. Click &quot;+ Add Block&quot; to configure your first hostel
+                      wing.
                     </td>
                   </tr>
                 ) : (
@@ -825,8 +829,12 @@ export function AdminRoomsPage() {
                     <tr key={b.id} className="hover:bg-[#FFFDF9] transition-colors">
                       <td className="py-3.5 px-4 font-mono font-bold text-[#292039]">{b.code}</td>
                       <td className="py-3.5 px-4 font-semibold text-[#292039]">{b.name}</td>
-                      <td className="py-3.5 px-4 font-mono">{b.totalRooms ?? b.rooms_count ?? 0}</td>
-                      <td className="py-3.5 px-4 font-mono">{b.totalCapacity ?? b.total_capacity ?? 0}</td>
+                      <td className="py-3.5 px-4 font-mono">
+                        {b.totalRooms ?? b.rooms_count ?? 0}
+                      </td>
+                      <td className="py-3.5 px-4 font-mono">
+                        {b.totalCapacity ?? b.total_capacity ?? 0}
+                      </td>
                       <td className="py-3.5 px-4 font-mono font-semibold text-[#D94378]">
                         {b.occupiedBeds ?? b.occupied_beds ?? 0}
                       </td>
@@ -903,7 +911,8 @@ export function AdminRoomsPage() {
                         {alloc.student?.rollNumber || alloc.student?.roll_number || 'N/A'}
                       </td>
                       <td className="py-3.5 px-4 font-semibold text-[#D94378]">
-                        Room {alloc.room_number || alloc.roomNumber} (Bed {alloc.bed_number || alloc.bedNumber})
+                        Room {alloc.room_number || alloc.roomNumber} (Bed{' '}
+                        {alloc.bed_number || alloc.bedNumber})
                       </td>
                       <td className="py-3.5 px-4 text-[#292039]/80">
                         {alloc.block_name || alloc.blockName}
@@ -1040,7 +1049,10 @@ export function AdminRoomsPage() {
               </div>
 
               <div>
-                <label htmlFor="add-block-order" className="font-semibold text-[#292039] block mb-1">
+                <label
+                  htmlFor="add-block-order"
+                  className="font-semibold text-[#292039] block mb-1"
+                >
                   Display Order
                 </label>
                 <input
@@ -1239,7 +1251,9 @@ export function AdminRoomsPage() {
                 </div>
 
                 <div>
-                  <label className="font-semibold text-[#292039] block mb-1">Capacity (1-8 Beds)</label>
+                  <label className="font-semibold text-[#292039] block mb-1">
+                    Capacity (1-8 Beds)
+                  </label>
                   <input
                     type="number"
                     min="1"
@@ -1321,7 +1335,8 @@ export function AdminRoomsPage() {
                   className="w-full px-3.5 py-2 rounded-xl border border-[#D8CEBE] bg-[#FFFDF9] text-[#292039]"
                 />
                 <p className="text-[11px] text-[#292039]/60 mt-1">
-                  Protection: Cannot reduce capacity below current resident bed numbers (currently {editingRoom.occupied ?? 0} occupied).
+                  Protection: Cannot reduce capacity below current resident bed numbers (currently{' '}
+                  {editingRoom.occupied ?? 0} occupied).
                 </p>
               </div>
 
@@ -1398,7 +1413,10 @@ export function AdminRoomsPage() {
                   <option value="">Select a student resident</option>
                   {activeStudents.map((s) => (
                     <option key={s.id} value={s.id}>
-                      {s.fullName} ({s.rollNumber}) {s.room && s.room !== 'Not Assigned' ? `• Currently ${s.room}` : '• Not Allocated'}
+                      {s.fullName} ({s.rollNumber}){' '}
+                      {s.room && s.room !== 'Not Assigned'
+                        ? `• Currently ${s.room}`
+                        : '• Not Allocated'}
                     </option>
                   ))}
                 </select>
@@ -1416,7 +1434,9 @@ export function AdminRoomsPage() {
                     <option value="">Select a room</option>
                     {rooms.map((r) => (
                       <option key={r.id || r.room_number} value={r.id || r.room_number}>
-                        {r.room_number || r.roomNumber} ({r.block}) — {r.vacantBeds ?? r.vacant_beds ?? (r.capacity - (r.occupied ?? 0))} vacant beds
+                        {r.room_number || r.roomNumber} ({r.block}) —{' '}
+                        {r.vacantBeds ?? r.vacant_beds ?? r.capacity - (r.occupied ?? 0)} vacant
+                        beds
                       </option>
                     ))}
                   </select>
@@ -1452,7 +1472,9 @@ export function AdminRoomsPage() {
               </div>
 
               <div>
-                <label className="font-semibold text-[#292039] block mb-1">Allocation Start Date</label>
+                <label className="font-semibold text-[#292039] block mb-1">
+                  Allocation Start Date
+                </label>
                 <input
                   type="date"
                   required
@@ -1506,7 +1528,9 @@ export function AdminRoomsPage() {
             </div>
 
             <div className="p-3 bg-[#F7EFE6] rounded-xl text-xs text-[#292039]/80">
-              Current Location: <strong>Room {transferTarget.room_number || transferTarget.roomNumber}</strong> (Bed {transferTarget.bed_number || transferTarget.bedNumber})
+              Current Location:{' '}
+              <strong>Room {transferTarget.room_number || transferTarget.roomNumber}</strong> (Bed{' '}
+              {transferTarget.bed_number || transferTarget.bedNumber})
             </div>
 
             <form onSubmit={handleTransferStudent} className="space-y-4 text-xs">
@@ -1521,7 +1545,8 @@ export function AdminRoomsPage() {
                   <option value="">Select target room</option>
                   {rooms.map((r) => (
                     <option key={r.id || r.room_number} value={r.id || r.room_number}>
-                      {r.room_number || r.roomNumber} ({r.block}) — {r.vacantBeds ?? r.vacant_beds ?? (r.capacity - (r.occupied ?? 0))} vacant beds
+                      {r.room_number || r.roomNumber} ({r.block}) —{' '}
+                      {r.vacantBeds ?? r.vacant_beds ?? r.capacity - (r.occupied ?? 0)} vacant beds
                     </option>
                   ))}
                 </select>
@@ -1556,7 +1581,9 @@ export function AdminRoomsPage() {
               </div>
 
               <div>
-                <label className="font-semibold text-[#292039] block mb-1">Effective Transfer Date</label>
+                <label className="font-semibold text-[#292039] block mb-1">
+                  Effective Transfer Date
+                </label>
                 <input
                   type="date"
                   required
@@ -1621,12 +1648,17 @@ export function AdminRoomsPage() {
             </div>
 
             <div className="p-3 bg-rose-50 border border-rose-200 rounded-xl text-xs text-rose-900">
-              Ending bed allocation for <strong>Room {endTarget.room_number || endTarget.roomNumber}</strong> (Bed {endTarget.bed_number || endTarget.bedNumber}). This frees the bed slot for new admissions.
+              Ending bed allocation for{' '}
+              <strong>Room {endTarget.room_number || endTarget.roomNumber}</strong> (Bed{' '}
+              {endTarget.bed_number || endTarget.bedNumber}). This frees the bed slot for new
+              admissions.
             </div>
 
             <form onSubmit={handleEndAllocation} className="space-y-4 text-xs">
               <div>
-                <label className="font-semibold text-[#292039] block mb-1">Vacate / Checkout Date</label>
+                <label className="font-semibold text-[#292039] block mb-1">
+                  Vacate / Checkout Date
+                </label>
                 <input
                   type="date"
                   required

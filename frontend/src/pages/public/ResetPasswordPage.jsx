@@ -14,10 +14,7 @@ export function ResetPasswordPage() {
   const [errorMsg, setErrorMsg] = useState('')
   const [tokenRejected, setTokenRejected] = useState(false)
 
-  const cleanToken = useMemo(
-    () => (token || '').trim().replace(/^["']|["']$/g, ''),
-    [token],
-  )
+  const cleanToken = useMemo(() => (token || '').trim().replace(/^["']|["']$/g, ''), [token])
 
   // Explicit URL states or server rejection
   const isRedactedToken = cleanToken === '[REDACTED-TOKEN]' || cleanToken === '%5BREDACTED-TOKEN%5D'
@@ -193,7 +190,10 @@ export function ResetPasswordPage() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="new-password" className="block text-xs font-semibold text-[#292039] mb-1">
+            <label
+              htmlFor="new-password"
+              className="block text-xs font-semibold text-[#292039] mb-1"
+            >
               New Password *
             </label>
             <input
@@ -225,7 +225,10 @@ export function ResetPasswordPage() {
           </div>
 
           <div>
-            <label htmlFor="confirm-password" className="block text-xs font-semibold text-[#292039] mb-1">
+            <label
+              htmlFor="confirm-password"
+              className="block text-xs font-semibold text-[#292039] mb-1"
+            >
               Confirm New Password *
             </label>
             <input

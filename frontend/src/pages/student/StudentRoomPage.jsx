@@ -5,10 +5,10 @@ export function StudentRoomPage() {
 
   const hasActiveAllocation = Boolean(
     user?.hasActiveRoom &&
-      user?.room &&
-      user.room !== 'Unassigned' &&
-      user.room !== 'Unallocated' &&
-      user.room !== 'Not Assigned',
+    user?.room &&
+    user.room !== 'Unassigned' &&
+    user.room !== 'Unallocated' &&
+    user.room !== 'Not Assigned',
   )
 
   const roomDisplay = hasActiveAllocation ? user.room : 'Not Assigned'
@@ -29,10 +29,10 @@ export function StudentRoomPage() {
   const rawRoommate = user?.roommate
   const hasAssignedRoommate = Boolean(
     hasActiveAllocation &&
-      rawRoommate &&
-      rawRoommate !== 'No Roommate Assigned' &&
-      rawRoommate !== '(Allotment pending)' &&
-      rawRoommate !== 'Assigned Hostel Room',
+    rawRoommate &&
+    rawRoommate !== 'No Roommate Assigned' &&
+    rawRoommate !== '(Allotment pending)' &&
+    rawRoommate !== 'Assigned Hostel Room',
   )
   const roommateName = hasAssignedRoommate ? rawRoommate : 'No Roommate Assigned'
 

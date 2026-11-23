@@ -150,9 +150,11 @@ def create_block(data: dict[str, Any], admin_user: User) -> dict[str, Any]:
     if dup_name is not None:
         raise RoomServiceError("conflict", f"A block with name '{name}' already exists.", 409)
 
-    raw_code = str(
-        data.get("code") or data.get("block_code") or data.get("blockCode") or ""
-    ).strip().upper()
+    raw_code = (
+        str(data.get("code") or data.get("block_code") or data.get("blockCode") or "")
+        .strip()
+        .upper()
+    )
     if not raw_code:
         # Generate code from name (e.g. "Block A (Nalanda)" -> "BLKA")
         clean_chars = re.sub(r"[^A-Z0-9]", "", name.upper())
@@ -177,9 +179,7 @@ def create_block(data: dict[str, Any], admin_user: User) -> dict[str, Any]:
 
     try:
         raw_order = (
-            data.get("display_order")
-            if "display_order" in data
-            else data.get("displayOrder", 0)
+            data.get("display_order") if "display_order" in data else data.get("displayOrder", 0)
         )
         display_order = int(raw_order) if raw_order is not None else 0
     except (ValueError, TypeError):

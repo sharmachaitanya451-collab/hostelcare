@@ -29,7 +29,9 @@ export function RequireRole({ allowedRoles = ['student'] }) {
   // Non-active accounts (pending, rejected, suspended, deactivated) cannot access protected portals
   const normalizedStatus = (user.status || 'active').toLowerCase()
   if (normalizedStatus !== 'active' && normalizedStatus !== 'on duty') {
-    return <Navigate to="/login" state={{ pendingNotice: normalizedStatus === 'pending' }} replace />
+    return (
+      <Navigate to="/login" state={{ pendingNotice: normalizedStatus === 'pending' }} replace />
+    )
   }
 
   // Enforce strict role isolation

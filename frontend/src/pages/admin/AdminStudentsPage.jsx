@@ -3,13 +3,8 @@ import { useApp } from '../../context/AppContext'
 import { StatusBadge } from '../../components/Brand'
 
 export function AdminStudentsPage() {
-  const {
-    students,
-    studentsLoading,
-    studentsError,
-    fetchStudents,
-    sendUserPasswordReset,
-  } = useApp()
+  const { students, studentsLoading, studentsError, fetchStudents, sendUserPasswordReset } =
+    useApp()
   const [notice, setNotice] = useState('')
   const [errorMsg, setErrorMsg] = useState('')
 

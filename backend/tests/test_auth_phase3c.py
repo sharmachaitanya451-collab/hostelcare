@@ -578,12 +578,16 @@ def test_staff_password_setup_token_lifecycle_console_mode_and_rejection_cases(a
     expected_hash = hashlib.sha256(raw_token.encode("utf-8")).hexdigest()
     with auth_app.app_context():
         # Previous token issued at creation must be revoked
-        tokens = db.session.execute(
-            select(PasswordResetToken)
-            .join(User, User.id == PasswordResetToken.user_id)
-            .where(User.public_id == staff_pub_id)
-            .order_by(PasswordResetToken.id.asc())
-        ).scalars().all()
+        tokens = (
+            db.session.execute(
+                select(PasswordResetToken)
+                .join(User, User.id == PasswordResetToken.user_id)
+                .where(User.public_id == staff_pub_id)
+                .order_by(PasswordResetToken.id.asc())
+            )
+            .scalars()
+            .all()
+        )
         assert len(tokens) == 2
         initial_token, fresh_token = tokens[0], tokens[1]
         assert initial_token.revoked_at is not None
@@ -845,9 +849,7 @@ def test_login_strict_role_enforcement_and_mismatch_rejection(auth_app):
     # 2. Positive matches with canonical and display labels
     # Student + Student selection -> success
     stu_client = auth_app.test_client()
-    resp = _login(
-        stu_client, "student.strict@hostelcare.test", "StudentPass123!", role="student"
-    )
+    resp = _login(stu_client, "student.strict@hostelcare.test", "StudentPass123!", role="student")
     assert resp.status_code == 200
     assert resp.get_json()["user"]["role"] == "student"
     assert stu_client.get("/api/v1/auth/me").status_code == 200
@@ -882,9 +884,7 @@ def test_login_strict_role_enforcement_and_mismatch_rejection(auth_app):
 
     # Staff account + Student selection -> HTTP 403
     mismatch_client2 = auth_app.test_client()
-    resp = _login(
-        mismatch_client2, "staff.strict@hostelcare.test", "StaffPass123!", role="student"
-    )
+    resp = _login(mismatch_client2, "staff.strict@hostelcare.test", "StaffPass123!", role="student")
     assert resp.status_code == 403
     assert resp.get_json()["error"]["code"] == "role_mismatch"
     assert mismatch_client2.get("/api/v1/auth/me").status_code == 401
@@ -900,9 +900,7 @@ def test_login_strict_role_enforcement_and_mismatch_rejection(auth_app):
 
     # Admin account + Staff selection -> HTTP 403
     mismatch_client4 = auth_app.test_client()
-    resp = _login(
-        mismatch_client4, "warden.strict@hostelcare.test", "AdminPass123!", role="staff"
-    )
+    resp = _login(mismatch_client4, "warden.strict@hostelcare.test", "AdminPass123!", role="staff")
     assert resp.status_code == 403
     assert resp.get_json()["error"]["code"] == "role_mismatch"
     assert mismatch_client4.get("/api/v1/auth/me").status_code == 401

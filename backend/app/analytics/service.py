@@ -205,9 +205,7 @@ def _compute_complaint_kpis(start_dt: datetime, end_dt_exclusive: datetime) -> d
 def _compute_approval_kpis() -> dict[str, int]:
     """Compute live student registration status counts."""
     rows = db.session.execute(
-        select(User.status, func.count(User.id))
-        .where(User.role == "student")
-        .group_by(User.status)
+        select(User.status, func.count(User.id)).where(User.role == "student").group_by(User.status)
     ).all()
 
     counts = {str(status_key): int(count_val or 0) for status_key, count_val in rows}

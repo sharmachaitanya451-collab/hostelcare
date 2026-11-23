@@ -99,11 +99,7 @@ def _generate_trend_buckets(
                     "label": cur.strftime("%b %Y"),
                 }
             )
-            cur = (
-                date(cur.year + 1, 1, 1)
-                if cur.month == 12
-                else date(cur.year, cur.month + 1, 1)
-            )
+            cur = date(cur.year + 1, 1, 1) if cur.month == 12 else date(cur.year, cur.month + 1, 1)
     return buckets
 
 

@@ -949,9 +949,7 @@ def test_student_complaint_ownership_idor_and_roommate_isolation(phase3d_app):
         admin_user = db.session.execute(
             select(User).where(User.email == "warden@hostelcare.test")
         ).scalar_one()
-        room_204 = db.session.execute(
-            select(Room).where(Room.room_number == "A-204")
-        ).scalar_one()
+        room_204 = db.session.execute(select(Room).where(Room.room_number == "A-204")).scalar_one()
         stu_b = User(
             email="rohan.verma@hostelcare.test",
             full_name="Rohan Verma",
@@ -1179,9 +1177,7 @@ def test_student_complaint_ownership_idor_and_roommate_isolation(phase3d_app):
 
     # Verify DB record for B was untouched
     with phase3d_app.app_context():
-        b_after = db.session.execute(
-            select(Complaint).where(Complaint.id == id_b)
-        ).scalar_one()
+        b_after = db.session.execute(select(Complaint).where(Complaint.id == id_b)).scalar_one()
         b_hist_count_after = len(
             db.session.execute(
                 select(ComplaintHistory).where(ComplaintHistory.complaint_id == id_b)
@@ -1229,7 +1225,9 @@ def test_student_complaint_ownership_idor_and_roommate_isolation(phase3d_app):
 
 @pytest.mark.db
 def test_internal_notes_excluded_from_public_complaint_history(phase3d_app):
-    """Verify warden notes, dispatch instructions, and review remarks never leak into student/staff history."""
+    """Verify warden notes, dispatch instructions, and review remarks never leak
+    into student/staff history.
+    """
     actors = _seed_complaint_actors(phase3d_app)
     stu_client = phase3d_app.test_client()
     admin_client = phase3d_app.test_client()
@@ -1329,18 +1327,14 @@ def test_internal_notes_excluded_from_public_complaint_history(phase3d_app):
     assert "SECRET REASSIGNMENT INSTRUCTION" not in str(stu_hist_after)
     reassign_events = [h for h in stu_hist_after if h["action_code"] == "reassigned"]
     assert len(reassign_events) == 1
-    assert (
-        reassign_events[0]["note"]
-        == "Reassigned from Ramesh Babu to Santosh Kumar (Plumber)."
-    )
+    assert reassign_events[0]["note"] == "Reassigned from Ramesh Babu to Santosh Kumar (Plumber)."
 
     stf2_task = stf2_client.get(f"/api/v1/staff/tasks/{ref_no}").get_json()["task"]
     assert stf2_task["instructions"] == "SECRET REASSIGNMENT INSTRUCTION: Inspect main breaker."
     assert "SECRET REASSIGNMENT INSTRUCTION" not in str(stf2_task["history"])
     stf2_reassign_events = [h for h in stf2_task["history"] if h["action_code"] == "reassigned"]
     assert (
-        stf2_reassign_events[0]["note"]
-        == "Reassigned from Ramesh Babu to Santosh Kumar (Plumber)."
+        stf2_reassign_events[0]["note"] == "Reassigned from Ramesh Babu to Santosh Kumar (Plumber)."
     )
 
     # 5. Legacy historical records containing Warden Note: and Instructions: suffixes
@@ -1365,7 +1359,10 @@ def test_internal_notes_excluded_from_public_complaint_history(phase3d_app):
             action="reassigned",
             from_status="assigned",
             to_status="assigned",
-            note="Reassigned from Ramesh Babu to Santosh Kumar (Plumber). Instructions: Legacy secret instruction",
+            note=(
+                "Reassigned from Ramesh Babu to Santosh Kumar (Plumber). "
+                "Instructions: Legacy secret instruction"
+            ),
         )
         db.session.add_all([legacy_assign, legacy_reassign])
         db.session.commit()
@@ -1383,10 +1380,7 @@ def test_internal_notes_excluded_from_public_complaint_history(phase3d_app):
     legacy_assign_out = next(h for h in stu_legacy_hist if h["id"] == legacy_assign_id)
     legacy_reassign_out = next(h for h in stu_legacy_hist if h["id"] == legacy_reassign_id)
     assert legacy_assign_out["note"] == "Assigned to Ramesh Babu (Electrician)."
-    assert (
-        legacy_reassign_out["note"]
-        == "Reassigned from Ramesh Babu to Santosh Kumar (Plumber)."
-    )
+    assert legacy_reassign_out["note"] == "Reassigned from Ramesh Babu to Santosh Kumar (Plumber)."
 
     stf2_legacy_task = stf2_client.get(f"/api/v1/staff/tasks/{ref_no}").get_json()["task"]
     assert "Legacy secret note" not in str(stf2_legacy_task["history"])

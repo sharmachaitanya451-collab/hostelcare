@@ -13,9 +13,7 @@ export function LoginPage() {
   const [identifier, setIdentifier] = useState('')
   const [password, setPassword] = useState('')
   const [errorMsg, setErrorMsg] = useState('')
-  const [errorCode, setErrorCode] = useState(
-    location.state?.pendingNotice ? 'account_pending' : '',
-  )
+  const [errorCode, setErrorCode] = useState(location.state?.pendingNotice ? 'account_pending' : '')
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleSubmit = async (e) => {
@@ -117,9 +115,7 @@ export function LoginPage() {
             role="alert"
             className="p-4 rounded-2xl bg-amber-50 border border-amber-300 text-amber-950 text-xs space-y-1"
           >
-            <div className="font-bold text-[#B36E08]">
-              ⏳ Registration Pending Warden Approval
-            </div>
+            <div className="font-bold text-[#B36E08]">⏳ Registration Pending Warden Approval</div>
             <p className="leading-relaxed">
               {errorMsg ||
                 'Your registration is pending warden approval. Please check back after verification.'}

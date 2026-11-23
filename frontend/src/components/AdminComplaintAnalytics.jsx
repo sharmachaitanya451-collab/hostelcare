@@ -1,11 +1,4 @@
-const CATEGORY_BAR_COLORS = [
-  '#D94378',
-  '#368F83',
-  '#F4AA35',
-  '#292039',
-  '#7C3AED',
-  '#C95337',
-]
+const CATEGORY_BAR_COLORS = ['#D94378', '#368F83', '#F4AA35', '#292039', '#7C3AED', '#C95337']
 
 function formatDuration(hours, seconds) {
   if (hours === null || hours === undefined || Number.isNaN(Number(hours))) {
@@ -339,8 +332,8 @@ export function AdminComplaintAnalytics({ data, loading, error, onRetry }) {
                 SLA Compliance &amp; Breach Monitoring
               </h2>
               <p className="text-xs text-[#292039]/65">
-                Priority targets: High (24h), Medium (72h), Low (168h) &middot; {sla.eligibleCount ?? 0}{' '}
-                eligible ticket(s)
+                Priority targets: High (24h), Medium (72h), Low (168h) &middot;{' '}
+                {sla.eligibleCount ?? 0} eligible ticket(s)
               </p>
             </div>
             <div className="px-3.5 py-2 rounded-2xl bg-[#FBF7F0] border border-[#E8DCCF] text-right shrink-0">

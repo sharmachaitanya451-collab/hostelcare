@@ -114,9 +114,7 @@ export function StaffLoginPage() {
             disabled={isSubmitting}
             className="w-full py-3 rounded-xl text-sm font-semibold text-white bg-[#368F83] hover:bg-[#2B7369] shadow-md shadow-[#368F83]/25 transition-all cursor-pointer disabled:opacity-60"
           >
-            {isSubmitting
-              ? 'Signing In...'
-              : 'Access Staff Maintenance Console →'}
+            {isSubmitting ? 'Signing In...' : 'Access Staff Maintenance Console →'}
           </button>
         </form>
 

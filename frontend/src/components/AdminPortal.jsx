@@ -113,12 +113,7 @@ export function AdminPortal({
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d={tab.icon}
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={tab.icon} />
                 </svg>
                 <span>{tab.label}</span>
               </div>

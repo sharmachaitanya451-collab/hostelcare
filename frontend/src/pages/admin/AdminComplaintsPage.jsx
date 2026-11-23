@@ -64,9 +64,7 @@ export function AdminComplaintsPage() {
   const statusFilter = normalizeStatusParam(searchParams.get('status'))
   const priorityFilter = searchParams.get('priority') || 'ALL'
   const categoryFilter = searchParams.get('category') || 'ALL'
-  const staffFilter = normalizeStaffParam(
-    searchParams.get('staff') || searchParams.get('assigned'),
-  )
+  const staffFilter = normalizeStaffParam(searchParams.get('staff') || searchParams.get('assigned'))
   const blockFilter = searchParams.get('block') || 'ALL'
   const dateFilter = searchParams.get('date') || ''
   const rawPage = Number.parseInt(searchParams.get('page') || '1', 10)

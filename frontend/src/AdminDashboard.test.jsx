@@ -610,7 +610,9 @@ describe('Phase 4.1 Admin Dashboard & KPI Engine', () => {
     await waitFor(() => {
       expect(screen.getByText('No active hostel blocks configured.')).toBeInTheDocument()
       expect(
-        screen.getByText('No maintenance complaints recorded during the selected reporting window.'),
+        screen.getByText(
+          'No maintenance complaints recorded during the selected reporting window.',
+        ),
       ).toBeInTheDocument()
     })
 
@@ -1178,7 +1180,9 @@ describe('Phase 4.1 Admin Dashboard & KPI Engine', () => {
           screen.getByText('No complaint submissions or completions occurred during this period.'),
         ).toBeInTheDocument()
         expect(screen.getByText('N/A')).toBeInTheDocument()
-        expect(screen.getByText('No active maintenance staff members configured.')).toBeInTheDocument()
+        expect(
+          screen.getByText('No active maintenance staff members configured.'),
+        ).toBeInTheDocument()
       })
     })
   })

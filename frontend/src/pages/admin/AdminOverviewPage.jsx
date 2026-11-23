@@ -205,8 +205,10 @@ export function AdminOverviewPage() {
           <div className="flex items-center gap-2 text-[11px] text-[#292039]/65">
             {dateRange?.dateFrom && dateRange?.dateTo && (
               <span>
-                Window: <strong className="text-[#292039]">{formatDisplayDate(dateRange.dateFrom)}</strong>{' '}
-                &ndash; <strong className="text-[#292039]">{formatDisplayDate(dateRange.dateTo)}</strong>{' '}
+                Window:{' '}
+                <strong className="text-[#292039]">{formatDisplayDate(dateRange.dateFrom)}</strong>{' '}
+                &ndash;{' '}
+                <strong className="text-[#292039]">{formatDisplayDate(dateRange.dateTo)}</strong>{' '}
                 (IST)
               </span>
             )}
@@ -502,7 +504,8 @@ export function AdminOverviewPage() {
                 <div className="flex items-center justify-between text-[11px] font-semibold text-[#292039]/75 mb-1.5">
                   <span>Overall Bed Utilization</span>
                   <span>
-                    {occupancy.occupiedBeds} / {occupancy.totalCapacity} beds ({occupancy.occupancyRate}
+                    {occupancy.occupiedBeds} / {occupancy.totalCapacity} beds (
+                    {occupancy.occupancyRate}
                     %)
                   </span>
                 </div>
@@ -617,7 +620,9 @@ export function AdminOverviewPage() {
                   <div className="text-sm font-bold text-[#292039] mt-0.5">
                     {formatInr(finances.waivedAmount)}
                   </div>
-                  <span className="text-[10px] text-[#292039]/60">{finances.waivedCount} waived</span>
+                  <span className="text-[10px] text-[#292039]/60">
+                    {finances.waivedCount} waived
+                  </span>
                 </div>
 
                 <div className="p-3 rounded-2xl bg-white border border-[#F0E4D4]">

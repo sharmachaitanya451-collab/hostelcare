@@ -850,4 +850,3 @@ def test_analytics_overview_active_residents_distinct_and_eligibility(analytics_
     assert resp.status_code == 200
     payload = resp.get_json()
     assert payload["residents"]["activeCount"] == 1
-
